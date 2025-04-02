@@ -1,0 +1,634 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/shashank/opt/cross/lib/gcc/i686-elf/13.1.0/libgcc.a(_udivdi3.o)
+                              /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/stdio.obj (__udivdi3)
+/home/shashank/opt/cross/lib/gcc/i686-elf/13.1.0/libgcc.a(_umoddi3.o)
+                              /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/stdio.obj (__umoddi3)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/asm/arch/i686/gdt.obj
+LOAD /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/asm/arch/i686/idt.obj
+LOAD /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/asm/arch/i686/io.obj
+LOAD /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/asm/arch/i686/isr.obj
+LOAD /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/graphics.obj
+LOAD /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/main.obj
+LOAD /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/memory.obj
+LOAD /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/stdio.obj
+LOAD /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/hal/hal.obj
+LOAD /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/gdt.obj
+LOAD /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/i8259.obj
+LOAD /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/idt.obj
+LOAD /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/io.obj
+LOAD /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/irq.obj
+LOAD /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/isr.obj
+LOAD /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/isrs_gen.obj
+LOAD /home/shashank/opt/cross/lib/gcc/i686-elf/13.1.0/libgcc.a
+                0x00100000                        phys = 0x100000
+                0x00100000                        . = phys
+
+.entry          0x00100000       0x73
+                0x00100000                        __entry_start = .
+ *(.entry)
+ .entry         0x00100000       0x73 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/main.obj
+                0x00100000                start
+
+.text           0x00100080     0x4516
+                0x00100080                        __text_start = .
+ *(.text)
+ .text          0x00100080       0x25 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/asm/arch/i686/gdt.obj
+                0x00100080                i686_GDT_Load
+ *fill*         0x001000a5        0xb 
+ .text          0x001000b0        0xd /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/asm/arch/i686/idt.obj
+                0x001000b0                i686_IDT_Load
+ *fill*         0x001000bd        0x3 
+ .text          0x001000c0       0x1d /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/asm/arch/i686/io.obj
+                0x001000c0                i686_outb
+                0x001000cb                i686_inb
+                0x001000d4                i686_Panic
+                0x001000d6                i686_EnableInterrupts
+                0x001000d8                i686_DisableInterrupts
+                0x001000da                crash_me
+ *fill*         0x001000dd        0x3 
+ .text          0x001000e0      0xa6d /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/asm/arch/i686/isr.obj
+                0x001000e0                i686_ISR0
+                0x001000e9                i686_ISR1
+                0x001000f2                i686_ISR2
+                0x001000fb                i686_ISR3
+                0x00100104                i686_ISR4
+                0x0010010d                i686_ISR5
+                0x00100116                i686_ISR6
+                0x0010011f                i686_ISR7
+                0x00100128                i686_ISR8
+                0x0010012f                i686_ISR9
+                0x00100138                i686_ISR10
+                0x0010013f                i686_ISR11
+                0x00100146                i686_ISR12
+                0x0010014d                i686_ISR13
+                0x00100154                i686_ISR14
+                0x0010015b                i686_ISR15
+                0x00100164                i686_ISR16
+                0x0010016d                i686_ISR17
+                0x00100174                i686_ISR18
+                0x0010017d                i686_ISR19
+                0x00100186                i686_ISR20
+                0x0010018f                i686_ISR21
+                0x00100196                i686_ISR22
+                0x0010019f                i686_ISR23
+                0x001001a8                i686_ISR24
+                0x001001b1                i686_ISR25
+                0x001001ba                i686_ISR26
+                0x001001c3                i686_ISR27
+                0x001001cc                i686_ISR28
+                0x001001d5                i686_ISR29
+                0x001001de                i686_ISR30
+                0x001001e7                i686_ISR31
+                0x001001f0                i686_ISR32
+                0x001001f9                i686_ISR33
+                0x00100202                i686_ISR34
+                0x0010020b                i686_ISR35
+                0x00100214                i686_ISR36
+                0x0010021d                i686_ISR37
+                0x00100226                i686_ISR38
+                0x0010022f                i686_ISR39
+                0x00100238                i686_ISR40
+                0x00100241                i686_ISR41
+                0x0010024a                i686_ISR42
+                0x00100253                i686_ISR43
+                0x0010025c                i686_ISR44
+                0x00100265                i686_ISR45
+                0x0010026e                i686_ISR46
+                0x00100277                i686_ISR47
+                0x00100280                i686_ISR48
+                0x00100289                i686_ISR49
+                0x00100292                i686_ISR50
+                0x0010029b                i686_ISR51
+                0x001002a4                i686_ISR52
+                0x001002ad                i686_ISR53
+                0x001002b6                i686_ISR54
+                0x001002bf                i686_ISR55
+                0x001002c8                i686_ISR56
+                0x001002d1                i686_ISR57
+                0x001002da                i686_ISR58
+                0x001002e3                i686_ISR59
+                0x001002ec                i686_ISR60
+                0x001002f5                i686_ISR61
+                0x001002fe                i686_ISR62
+                0x00100307                i686_ISR63
+                0x00100310                i686_ISR64
+                0x00100319                i686_ISR65
+                0x00100322                i686_ISR66
+                0x0010032b                i686_ISR67
+                0x00100334                i686_ISR68
+                0x0010033d                i686_ISR69
+                0x00100346                i686_ISR70
+                0x0010034f                i686_ISR71
+                0x00100358                i686_ISR72
+                0x00100361                i686_ISR73
+                0x0010036a                i686_ISR74
+                0x00100373                i686_ISR75
+                0x0010037c                i686_ISR76
+                0x00100385                i686_ISR77
+                0x0010038e                i686_ISR78
+                0x00100397                i686_ISR79
+                0x001003a0                i686_ISR80
+                0x001003a9                i686_ISR81
+                0x001003b2                i686_ISR82
+                0x001003bb                i686_ISR83
+                0x001003c4                i686_ISR84
+                0x001003cd                i686_ISR85
+                0x001003d6                i686_ISR86
+                0x001003df                i686_ISR87
+                0x001003e8                i686_ISR88
+                0x001003f1                i686_ISR89
+                0x001003fa                i686_ISR90
+                0x00100403                i686_ISR91
+                0x0010040c                i686_ISR92
+                0x00100415                i686_ISR93
+                0x0010041e                i686_ISR94
+                0x00100427                i686_ISR95
+                0x00100430                i686_ISR96
+                0x00100439                i686_ISR97
+                0x00100442                i686_ISR98
+                0x0010044b                i686_ISR99
+                0x00100454                i686_ISR100
+                0x0010045d                i686_ISR101
+                0x00100466                i686_ISR102
+                0x0010046f                i686_ISR103
+                0x00100478                i686_ISR104
+                0x00100481                i686_ISR105
+                0x0010048a                i686_ISR106
+                0x00100493                i686_ISR107
+                0x0010049c                i686_ISR108
+                0x001004a5                i686_ISR109
+                0x001004ae                i686_ISR110
+                0x001004b7                i686_ISR111
+                0x001004c0                i686_ISR112
+                0x001004c9                i686_ISR113
+                0x001004d2                i686_ISR114
+                0x001004db                i686_ISR115
+                0x001004e4                i686_ISR116
+                0x001004ed                i686_ISR117
+                0x001004f6                i686_ISR118
+                0x001004ff                i686_ISR119
+                0x00100508                i686_ISR120
+                0x00100511                i686_ISR121
+                0x0010051a                i686_ISR122
+                0x00100523                i686_ISR123
+                0x0010052c                i686_ISR124
+                0x00100535                i686_ISR125
+                0x0010053e                i686_ISR126
+                0x00100547                i686_ISR127
+                0x00100550                i686_ISR128
+                0x0010055c                i686_ISR129
+                0x00100568                i686_ISR130
+                0x00100574                i686_ISR131
+                0x00100580                i686_ISR132
+                0x0010058c                i686_ISR133
+                0x00100598                i686_ISR134
+                0x001005a4                i686_ISR135
+                0x001005b0                i686_ISR136
+                0x001005bc                i686_ISR137
+                0x001005c8                i686_ISR138
+                0x001005d4                i686_ISR139
+                0x001005e0                i686_ISR140
+                0x001005ec                i686_ISR141
+                0x001005f8                i686_ISR142
+                0x00100604                i686_ISR143
+                0x00100610                i686_ISR144
+                0x0010061c                i686_ISR145
+                0x00100628                i686_ISR146
+                0x00100634                i686_ISR147
+                0x00100640                i686_ISR148
+                0x0010064c                i686_ISR149
+                0x00100658                i686_ISR150
+                0x00100664                i686_ISR151
+                0x00100670                i686_ISR152
+                0x0010067c                i686_ISR153
+                0x00100688                i686_ISR154
+                0x00100694                i686_ISR155
+                0x001006a0                i686_ISR156
+                0x001006ac                i686_ISR157
+                0x001006b8                i686_ISR158
+                0x001006c4                i686_ISR159
+                0x001006d0                i686_ISR160
+                0x001006dc                i686_ISR161
+                0x001006e8                i686_ISR162
+                0x001006f4                i686_ISR163
+                0x00100700                i686_ISR164
+                0x0010070c                i686_ISR165
+                0x00100718                i686_ISR166
+                0x00100724                i686_ISR167
+                0x00100730                i686_ISR168
+                0x0010073c                i686_ISR169
+                0x00100748                i686_ISR170
+                0x00100754                i686_ISR171
+                0x00100760                i686_ISR172
+                0x0010076c                i686_ISR173
+                0x00100778                i686_ISR174
+                0x00100784                i686_ISR175
+                0x00100790                i686_ISR176
+                0x0010079c                i686_ISR177
+                0x001007a8                i686_ISR178
+                0x001007b4                i686_ISR179
+                0x001007c0                i686_ISR180
+                0x001007cc                i686_ISR181
+                0x001007d8                i686_ISR182
+                0x001007e4                i686_ISR183
+                0x001007f0                i686_ISR184
+                0x001007fc                i686_ISR185
+                0x00100808                i686_ISR186
+                0x00100814                i686_ISR187
+                0x00100820                i686_ISR188
+                0x0010082c                i686_ISR189
+                0x00100838                i686_ISR190
+                0x00100844                i686_ISR191
+                0x00100850                i686_ISR192
+                0x0010085c                i686_ISR193
+                0x00100868                i686_ISR194
+                0x00100874                i686_ISR195
+                0x00100880                i686_ISR196
+                0x0010088c                i686_ISR197
+                0x00100898                i686_ISR198
+                0x001008a4                i686_ISR199
+                0x001008b0                i686_ISR200
+                0x001008bc                i686_ISR201
+                0x001008c8                i686_ISR202
+                0x001008d4                i686_ISR203
+                0x001008e0                i686_ISR204
+                0x001008ec                i686_ISR205
+                0x001008f8                i686_ISR206
+                0x00100904                i686_ISR207
+                0x00100910                i686_ISR208
+                0x0010091c                i686_ISR209
+                0x00100928                i686_ISR210
+                0x00100934                i686_ISR211
+                0x00100940                i686_ISR212
+                0x0010094c                i686_ISR213
+                0x00100958                i686_ISR214
+                0x00100964                i686_ISR215
+                0x00100970                i686_ISR216
+                0x0010097c                i686_ISR217
+                0x00100988                i686_ISR218
+                0x00100994                i686_ISR219
+                0x001009a0                i686_ISR220
+                0x001009ac                i686_ISR221
+                0x001009b8                i686_ISR222
+                0x001009c4                i686_ISR223
+                0x001009d0                i686_ISR224
+                0x001009dc                i686_ISR225
+                0x001009e8                i686_ISR226
+                0x001009f4                i686_ISR227
+                0x00100a00                i686_ISR228
+                0x00100a0c                i686_ISR229
+                0x00100a18                i686_ISR230
+                0x00100a24                i686_ISR231
+                0x00100a30                i686_ISR232
+                0x00100a3c                i686_ISR233
+                0x00100a48                i686_ISR234
+                0x00100a54                i686_ISR235
+                0x00100a60                i686_ISR236
+                0x00100a6c                i686_ISR237
+                0x00100a78                i686_ISR238
+                0x00100a84                i686_ISR239
+                0x00100a90                i686_ISR240
+                0x00100a9c                i686_ISR241
+                0x00100aa5                i686_ISR242
+                0x00100aae                i686_ISR243
+                0x00100ab7                i686_ISR244
+                0x00100ac0                i686_ISR245
+                0x00100ac9                i686_ISR246
+                0x00100ad2                i686_ISR247
+                0x00100adb                i686_ISR248
+                0x00100ae4                i686_ISR249
+                0x00100aed                i686_ISR250
+                0x00100af6                i686_ISR251
+                0x00100aff                i686_ISR252
+                0x00100b08                i686_ISR253
+                0x00100b11                i686_ISR254
+                0x00100b1a                i686_ISR255
+ .text          0x00100b4d     0x1074 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/graphics.obj
+                0x00100b4d                set_graphics_mode
+                0x00100b8a                init_palette
+                0x0010101b                init_framebuffer
+                0x00101049                put_pixel
+                0x0010109b                draw_rect
+                0x00101131                draw_char
+                0x001011ea                draw_text
+                0x00101282                draw_border
+                0x00101344                draw_button
+                0x0010143f                draw_window
+                0x00101516                draw_circle
+                0x0010177c                draw_filled_circle
+                0x00101964                draw_line
+                0x00101ab4                draw_progress_bar
+ .text          0x00101bc1      0x275 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/main.obj
+                0x00101bc1                timer
+                0x00101bda                init_graphics
+                0x00101c19                draw_animated_background
+                0x00101ca5                test_gui
+ .text          0x00101e36       0xf5 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/memory.obj
+                0x00101e36                memcpy
+                0x00101e88                memset
+                0x00101ecb                memcmp
+ .text          0x00101f2b      0x883 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/stdio.obj
+                0x00101f2b                putchr
+                0x00101f5a                putcolor
+                0x00101f8c                getchr
+                0x00101fae                getcolor
+                0x00101fd3                setcursor
+                0x00102044                clrscr
+                0x001020d2                scrollback
+                0x001021c0                putc
+                0x001022d0                puts
+                0x001022ff                printf_unsigned
+                0x001023a3                printf_signed
+                0x00102400                printf
+                0x00102715                print_buffer
+ .text          0x001027ae       0x1d /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/hal/hal.obj
+                0x001027ae                HAL_Initialize
+ .text          0x001027cb       0x1d /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/gdt.obj
+                0x001027cb                i686_GDT_Initialize
+ .text          0x001027e8      0x320 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/i8259.obj
+                0x001027e8                i8259_SetMask
+                0x00102843                i8259_GetMask
+                0x00102877                i8259_Configure
+                0x00102978                i8259_SendEndOfInterrupt
+                0x001029a8                i8259_Disable
+                0x001029c1                i8259_Mask
+                0x001029f2                i8259_Unmask
+                0x00102a25                i8259_ReadIrqRequestRegister
+                0x00102a7d                i8259_ReadInServiceRegister
+                0x00102ad5                i8259_Probe
+                0x00102afe                i8259_GetDriver
+ .text          0x00102b08       0xba /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/idt.obj
+                0x00102b08                i686_IDT_SetGate
+                0x00102b69                i686_IDT_EnableGate
+                0x00102b89                i686_IDT_DisableGate
+                0x00102ba9                i686_IDT_Initialize
+ .text          0x00102bc2       0x1b /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/io.obj
+                0x00102bc2                i686_iowait
+ .text          0x00102bdd      0x12a /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/irq.obj
+                0x00102bdd                i686_IRQ_Handler
+                0x00102c3d                i686_IRQ_Initialize
+                0x00102cf4                i686_IRQ_RegisterHandler
+ .text          0x00102d07      0x1a1 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/isr.obj
+                0x00102d07                i686_ISR_Initialize
+                0x00102d49                i686_ISR_Handler
+                0x00102e84                i686_ISR_RegisterHandler
+ .text          0x00102ea8     0x1489 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/isrs_gen.obj
+                0x00102ea8                i686_ISR_InitializeGates
+ *fill*         0x00104331        0xf 
+ .text          0x00104340      0x11a /home/shashank/opt/cross/lib/gcc/i686-elf/13.1.0/libgcc.a(_udivdi3.o)
+                0x00104340                __udivdi3
+ *fill*         0x0010445a        0x6 
+ .text          0x00104460      0x136 /home/shashank/opt/cross/lib/gcc/i686-elf/13.1.0/libgcc.a(_umoddi3.o)
+                0x00104460                __umoddi3
+
+.data           0x00104598       0x2e
+                0x00104598                        __data_start = .
+ *(.data)
+ .data          0x00104598        0x4 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/graphics.obj
+ .data          0x0010459c        0x0 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/main.obj
+ .data          0x0010459c        0x0 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/memory.obj
+ .data          0x0010459c        0x4 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/stdio.obj
+                0x0010459c                g_ScreenBuffer
+ .data          0x001045a0        0x0 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/hal/hal.obj
+ .data          0x001045a0       0x1e /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/gdt.obj
+                0x001045a0                g_GDT
+                0x001045b8                g_GDTDescriptor
+ .data          0x001045be        0x2 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/i8259.obj
+ .data          0x001045c0        0x6 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/idt.obj
+                0x001045c0                g_IDTDescriptor
+ .data          0x001045c6        0x0 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/io.obj
+ .data          0x001045c6        0x0 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/irq.obj
+ .data          0x001045c6        0x0 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/isr.obj
+ .data          0x001045c6        0x0 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/isrs_gen.obj
+ .data          0x001045c6        0x0 /home/shashank/opt/cross/lib/gcc/i686-elf/13.1.0/libgcc.a(_udivdi3.o)
+ .data          0x001045c6        0x0 /home/shashank/opt/cross/lib/gcc/i686-elf/13.1.0/libgcc.a(_umoddi3.o)
+
+.rodata         0x001045e0      0x96f
+                0x001045e0                        __rodata_start = .
+ *(.rodata)
+ .rodata        0x001045e0      0x425 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/graphics.obj
+ .rodata        0x00104a05       0xbf /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/main.obj
+ .rodata        0x00104ac4       0xba /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/stdio.obj
+                0x00104ac4                SCREEN_WIDTH
+                0x00104ac8                SCREEN_HEIGHT
+                0x00104acc                DEFAULT_COLOR
+                0x00104ad0                g_HexChars
+ *fill*         0x00104b7e        0x2 
+ .rodata        0x00104b80       0x28 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/i8259.obj
+ .rodata        0x00104ba8       0x3c /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/irq.obj
+ *fill*         0x00104be4       0x1c 
+ .rodata        0x00104c00      0x34f /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/isr.obj
+
+.eh_frame       0x00104f50       0xd8
+ .eh_frame      0x00104f50       0x64 /home/shashank/opt/cross/lib/gcc/i686-elf/13.1.0/libgcc.a(_udivdi3.o)
+ .eh_frame      0x00104fb4       0x74 /home/shashank/opt/cross/lib/gcc/i686-elf/13.1.0/libgcc.a(_umoddi3.o)
+
+.bss            0x00105040      0xc80
+                0x00105040                        __bss_start = .
+ *(.bss)
+ .bss           0x00105040        0x0 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/graphics.obj
+ .bss           0x00105040        0x0 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/main.obj
+ .bss           0x00105040        0x0 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/memory.obj
+ .bss           0x00105040        0x8 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/stdio.obj
+                0x00105040                g_ScreenX
+                0x00105044                g_ScreenY
+ .bss           0x00105048        0x0 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/hal/hal.obj
+ .bss           0x00105048        0x0 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/gdt.obj
+ .bss           0x00105048        0xd /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/i8259.obj
+                0x00105048                PIC_ICW1
+                0x0010504c                PIC_ICW4
+                0x00105050                PIC_CMD
+ *fill*         0x00105055        0xb 
+ .bss           0x00105060      0x800 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/idt.obj
+                0x00105060                g_IDT
+ .bss           0x00105860        0x0 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/io.obj
+ .bss           0x00105860       0x44 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/irq.obj
+                0x00105860                g_IRQHandlers
+ *fill*         0x001058a4       0x1c 
+ .bss           0x001058c0      0x400 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/isr.obj
+                0x001058c0                g_ISRHandlers
+ .bss           0x00105cc0        0x0 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/isrs_gen.obj
+ .bss           0x00105cc0        0x0 /home/shashank/opt/cross/lib/gcc/i686-elf/13.1.0/libgcc.a(_udivdi3.o)
+ .bss           0x00105cc0        0x0 /home/shashank/opt/cross/lib/gcc/i686-elf/13.1.0/libgcc.a(_umoddi3.o)
+                0x00105cc0                        __end = .
+OUTPUT(/mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel.bin binary)
+
+.debug_info     0x00000000     0x36de
+ .debug_info    0x00000000      0x811 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/graphics.obj
+ .debug_info    0x00000811      0x47a /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/main.obj
+ .debug_info    0x00000c8b      0x1e8 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/memory.obj
+ .debug_info    0x00000e73      0x54c /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/stdio.obj
+ .debug_info    0x000013bf       0xb3 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/hal/hal.obj
+ .debug_info    0x00001472      0x1fa /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/gdt.obj
+ .debug_info    0x0000166c      0x3bd /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/i8259.obj
+ .debug_info    0x00001a29      0x24e /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/idt.obj
+ .debug_info    0x00001c77       0xac /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/io.obj
+ .debug_info    0x00001d23      0x3a7 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/irq.obj
+ .debug_info    0x000020ca      0x29c /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/isr.obj
+ .debug_info    0x00002366      0xd09 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/isrs_gen.obj
+ .debug_info    0x0000306f      0x32c /home/shashank/opt/cross/lib/gcc/i686-elf/13.1.0/libgcc.a(_udivdi3.o)
+ .debug_info    0x0000339b      0x343 /home/shashank/opt/cross/lib/gcc/i686-elf/13.1.0/libgcc.a(_umoddi3.o)
+
+.debug_abbrev   0x00000000     0x1134
+ .debug_abbrev  0x00000000      0x185 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/graphics.obj
+ .debug_abbrev  0x00000185      0x1cf /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/main.obj
+ .debug_abbrev  0x00000354       0xe2 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/memory.obj
+ .debug_abbrev  0x00000436      0x1f6 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/stdio.obj
+ .debug_abbrev  0x0000062c       0x5a /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/hal/hal.obj
+ .debug_abbrev  0x00000686       0xf0 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/gdt.obj
+ .debug_abbrev  0x00000776      0x1ba /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/i8259.obj
+ .debug_abbrev  0x00000930      0x122 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/idt.obj
+ .debug_abbrev  0x00000a52       0x6d /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/io.obj
+ .debug_abbrev  0x00000abf      0x19a /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/irq.obj
+ .debug_abbrev  0x00000c59      0x150 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/isr.obj
+ .debug_abbrev  0x00000da9       0xbf /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/isrs_gen.obj
+ .debug_abbrev  0x00000e68      0x15b /home/shashank/opt/cross/lib/gcc/i686-elf/13.1.0/libgcc.a(_udivdi3.o)
+ .debug_abbrev  0x00000fc3      0x171 /home/shashank/opt/cross/lib/gcc/i686-elf/13.1.0/libgcc.a(_umoddi3.o)
+
+.debug_aranges  0x00000000      0x1c8
+ .debug_aranges
+                0x00000000       0x20 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/graphics.obj
+ .debug_aranges
+                0x00000020       0x28 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/main.obj
+ .debug_aranges
+                0x00000048       0x20 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/memory.obj
+ .debug_aranges
+                0x00000068       0x20 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/stdio.obj
+ .debug_aranges
+                0x00000088       0x20 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/hal/hal.obj
+ .debug_aranges
+                0x000000a8       0x20 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/gdt.obj
+ .debug_aranges
+                0x000000c8       0x20 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/i8259.obj
+ .debug_aranges
+                0x000000e8       0x20 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/idt.obj
+ .debug_aranges
+                0x00000108       0x20 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/io.obj
+ .debug_aranges
+                0x00000128       0x20 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/irq.obj
+ .debug_aranges
+                0x00000148       0x20 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/isr.obj
+ .debug_aranges
+                0x00000168       0x20 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/isrs_gen.obj
+ .debug_aranges
+                0x00000188       0x20 /home/shashank/opt/cross/lib/gcc/i686-elf/13.1.0/libgcc.a(_udivdi3.o)
+ .debug_aranges
+                0x000001a8       0x20 /home/shashank/opt/cross/lib/gcc/i686-elf/13.1.0/libgcc.a(_umoddi3.o)
+
+.debug_line     0x00000000     0x153b
+ .debug_line    0x00000000      0x50a /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/graphics.obj
+ .debug_line    0x0000050a      0x159 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/main.obj
+ .debug_line    0x00000663       0xcc /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/memory.obj
+ .debug_line    0x0000072f      0x396 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/stdio.obj
+ .debug_line    0x00000ac5       0x6a /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/hal/hal.obj
+ .debug_line    0x00000b2f       0x5c /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/gdt.obj
+ .debug_line    0x00000b8b      0x13e /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/i8259.obj
+ .debug_line    0x00000cc9       0x89 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/idt.obj
+ .debug_line    0x00000d52       0x5e /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/io.obj
+ .debug_line    0x00000db0      0x103 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/irq.obj
+ .debug_line    0x00000eb3       0xd8 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/isr.obj
+ .debug_line    0x00000f8b      0x25f /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/isrs_gen.obj
+ .debug_line    0x000011ea      0x180 /home/shashank/opt/cross/lib/gcc/i686-elf/13.1.0/libgcc.a(_udivdi3.o)
+ .debug_line    0x0000136a      0x1d1 /home/shashank/opt/cross/lib/gcc/i686-elf/13.1.0/libgcc.a(_umoddi3.o)
+
+.debug_str      0x00000000     0x2892
+ .debug_str     0x00000000      0x2ad /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/graphics.obj
+ .debug_str     0x000002ad      0x23f /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/main.obj
+ .debug_str     0x000004ec      0x125 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/memory.obj
+ .debug_str     0x00000611      0x24f /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/stdio.obj
+ .debug_str     0x00000860      0x12e /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/hal/hal.obj
+ .debug_str     0x0000098e      0x2fa /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/gdt.obj
+ .debug_str     0x00000c88      0x373 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/i8259.obj
+ .debug_str     0x00000ffb      0x291 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/idt.obj
+ .debug_str     0x0000128c       0xf6 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/io.obj
+ .debug_str     0x00001382      0x221 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/irq.obj
+ .debug_str     0x000015a3      0x1cb /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/isr.obj
+ .debug_str     0x0000176e      0xd5e /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/isrs_gen.obj
+ .debug_str     0x000024cc      0x1e3 /home/shashank/opt/cross/lib/gcc/i686-elf/13.1.0/libgcc.a(_udivdi3.o)
+ .debug_str     0x000026af      0x1e3 /home/shashank/opt/cross/lib/gcc/i686-elf/13.1.0/libgcc.a(_umoddi3.o)
+
+.debug_line_str
+                0x00000000      0xe9a
+ .debug_line_str
+                0x00000000      0x120 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/graphics.obj
+ .debug_line_str
+                0x00000120      0x135 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/main.obj
+ .debug_line_str
+                0x00000255      0x101 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/memory.obj
+ .debug_line_str
+                0x00000356      0x118 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/stdio.obj
+ .debug_line_str
+                0x0000046e       0xde /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/hal/hal.obj
+ .debug_line_str
+                0x0000054c      0x10c /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/gdt.obj
+ .debug_line_str
+                0x00000658      0x11d /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/i8259.obj
+ .debug_line_str
+                0x00000775      0x112 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/idt.obj
+ .debug_line_str
+                0x00000887      0x10e /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/io.obj
+ .debug_line_str
+                0x00000995      0x135 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/irq.obj
+ .debug_line_str
+                0x00000aca      0x127 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/isr.obj
+ .debug_line_str
+                0x00000bf1      0x121 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/isrs_gen.obj
+ .debug_line_str
+                0x00000d12       0xc4 /home/shashank/opt/cross/lib/gcc/i686-elf/13.1.0/libgcc.a(_udivdi3.o)
+ .debug_line_str
+                0x00000dd6       0xc4 /home/shashank/opt/cross/lib/gcc/i686-elf/13.1.0/libgcc.a(_umoddi3.o)
+
+.comment        0x00000000      0x10a
+ .comment       0x00000000       0x13 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/graphics.obj
+ .comment       0x00000013       0x13 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/main.obj
+ .comment       0x00000026       0x13 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/memory.obj
+ .comment       0x00000039       0x13 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/stdio.obj
+ .comment       0x0000004c       0x13 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/hal/hal.obj
+ .comment       0x0000005f       0x13 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/gdt.obj
+ .comment       0x00000072       0x13 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/i8259.obj
+ .comment       0x00000085       0x13 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/idt.obj
+ .comment       0x00000098       0x13 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/io.obj
+ .comment       0x000000ab       0x13 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/irq.obj
+ .comment       0x000000be       0x13 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/isr.obj
+ .comment       0x000000d1       0x13 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/isrs_gen.obj
+ .comment       0x000000e4       0x13 /home/shashank/opt/cross/lib/gcc/i686-elf/13.1.0/libgcc.a(_udivdi3.o)
+ .comment       0x000000f7       0x13 /home/shashank/opt/cross/lib/gcc/i686-elf/13.1.0/libgcc.a(_umoddi3.o)
+
+.debug_frame    0x00000000      0x8d4
+ .debug_frame   0x00000000      0x220 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/graphics.obj
+ .debug_frame   0x00000220       0xb0 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/main.obj
+ .debug_frame   0x000002d0       0x74 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/memory.obj
+ .debug_frame   0x00000344      0x1b8 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/stdio.obj
+ .debug_frame   0x000004fc       0x34 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/hal/hal.obj
+ .debug_frame   0x00000530       0x34 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/gdt.obj
+ .debug_frame   0x00000564      0x180 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/i8259.obj
+ .debug_frame   0x000006e4       0x94 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/idt.obj
+ .debug_frame   0x00000778       0x34 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/io.obj
+ .debug_frame   0x000007ac       0x74 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/irq.obj
+ .debug_frame   0x00000820       0x80 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/isr.obj
+ .debug_frame   0x000008a0       0x34 /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/arch/i686/isrs_gen.obj
+
+.debug_rnglists
+                0x00000000       0x63
+ .debug_rnglists
+                0x00000000       0x1a /mnt/c/Users/boyas/OneDrive/Desktop/nanobyte-dev-nanobyte_os-bdf4eab/build/kernel/c/main.obj
+ .debug_rnglists
+                0x0000001a       0x2a /home/shashank/opt/cross/lib/gcc/i686-elf/13.1.0/libgcc.a(_udivdi3.o)
+ .debug_rnglists
+                0x00000044       0x1f /home/shashank/opt/cross/lib/gcc/i686-elf/13.1.0/libgcc.a(_umoddi3.o)
+
+.debug_loclists
+                0x00000000      0x978
+ .debug_loclists
+                0x00000000      0x50c /home/shashank/opt/cross/lib/gcc/i686-elf/13.1.0/libgcc.a(_udivdi3.o)
+ .debug_loclists
+                0x0000050c      0x46c /home/shashank/opt/cross/lib/gcc/i686-elf/13.1.0/libgcc.a(_umoddi3.o)
